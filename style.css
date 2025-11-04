@@ -1,0 +1,174 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bungee", sans-serif;
+    font-size: 12px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+   background-image: url(./image/xman.jpg);
+    position: relative;
+}
+
+.estrelas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(1px 1px at 25% 15%, #fff, transparent),
+        radial-gradient(2px 2px at 40% 40%, #fff, transparent),
+        radial-gradient(1px 1px at 50% 40%, #fff, transparent),
+        radial-gradient(0.5px 0.5px at 80% 90%, #fff, transparent),
+        radial-gradient(2.5px 2.5px at 35% 75%, #fff, transparent),
+        radial-gradient(1.5px 3.5px at 95% 25%, #fff, transparent),
+        radial-gradient(1px 1px at 5% 30%, #fff, transparent),
+        radial-gradient(2px 2px at 90% 10%, #fff, transparent),
+        radial-gradient(1px 1px at 50% 85%, #fff, transparent),
+        radial-gradient(0.5px 0.5px at 40% 5%, #fff, transparent);
+
+}
+
+.formulario {
+    width: 400px;
+    background-color: rgb(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    color: #fff;
+    border-radius: 16px;
+    padding: 35px;
+
+}
+
+.formulario h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.caixa-formulario {
+    position: relative;
+    margin-bottom: 30px;
+
+}
+.caixa-formulario input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    outline:none;
+    color:rgb(75, 25, 29);
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    padding: 0 20px;
+
+
+}
+.caixa-formulario input::placeholder {
+    color: rgba(69, 23, 23, 0.3);
+
+}
+.caixa-formulario i {
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    top: 25%;
+}
+.caixa-lembrar-esqueci {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 16px;
+  
+}
+.caixa-lembrar-esqueci label{
+display: flex;
+align-items: center;
+gap: 5px;
+
+}
+
+.caixa-lembrar-esqueci label input {
+    accent-color: rgb(91, 24, 24);
+
+
+}
+.caixa-lembrar-esqueci a {
+text-decoration: none;
+color: rgb(75, 25, 29);
+}
+.caixa-lembrar-esqueci a:hover {
+text-decoration: underline;
+}
+
+.btn-two {
+    
+    align-items: center;
+  color: rgb(75, 25, 29);
+  transition: all 0.5s;
+  position: relative; 
+}
+.btn-two span {
+  z-index: 2; 
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+}
+.btn-two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
+}
+
+.botao {
+   width: 100%;
+   height: 45px;
+   color: rgb(75, 25, 29);
+}
+.link-registro {
+    text-align:center;
+    margin-top: 25px;
+    font-size: 14px;
+color: rgb(75, 25, 29);
+}
